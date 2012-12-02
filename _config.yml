@@ -1,0 +1,5 @@
+auto: true
+title: Measuring the Commons
+exclude: README.md
+
+permalink: /:title.html
