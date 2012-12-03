@@ -11,7 +11,7 @@ section h1 {
 }
 
 section {
-  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 hr {
@@ -22,18 +22,18 @@ hr {
   margin-bottom: 60px;
   color: white;
   
-  background-color: #2F2727;
+  /*background-color: #2F2727;*/
   background-size: cover;
   
-  background-image: url(../img/151392454_f831318635_o_blur_darken.jpg),-webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(black));
+  background-image: url(../img/151392454_f831318635_o_blur_darken_compress.jpg),-webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(black));
   
-  background-image: url(../img/151392454_f831318635_o_blur_darken.jpg), -webkit-linear-gradient(top, black, white);
+  background-image: url(../img/151392454_f831318635_o_blur_darken_compress.jpg), -webkit-linear-gradient(top, black, white);
   
-  background-image: url(../img/151392454_f831318635_o_blur_darken.jpg), -moz-linear-gradient(top, black, white);
+  background-image: url(../img/151392454_f831318635_o_blur_darken_compress.jpg), -moz-linear-gradient(top, black, white);
   
-  background-image: url(../img/151392454_f831318635_o_blur_darken.jpg),-ms-linear-gradient(top, black, white);
+  background-image: url(../img/151392454_f831318635_o_blur_darken_compress.jpg),-ms-linear-gradient(top, black, white);
   
-  background-image: url(../img/151392454_f831318635_o_blur_darken.jpg),-o-linear-gradient(top, black, white);
+  background-image: url(../img/151392454_f831318635_o_blur_darken_compress.jpg),-o-linear-gradient(top, black, white);
 }
 
 .carousel-caption {

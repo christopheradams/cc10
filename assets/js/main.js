@@ -1,4 +1,105 @@
 
+	
+$(document).ready(function() {
+    var scrollorama = $.scrollorama({
+        blocks:'.block',
+		enablePin: false
+    });
+	
+	scrollorama.animate('#halfBillionPlot',{
+	    duration:100, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#halfBillionTable',{
+	    duration:100, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#open-utopia',{
+	    delay:500, duration:300, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#wikipedia',{
+	    delay:800, duration:300, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#saylor',{
+	    delay:500, duration:300, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#cnx',{
+	    delay:800, duration:300, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#plos',{ 
+		delay: 450, duration: 200, property:'zoom', start:0.1 
+	});
+	
+	scrollorama.animate('#khanacademy',{ 
+		delay: 450, duration: 300, property:'zoom', start:0.1 
+	});
+	
+	scrollorama.animate('#minecraft',{ 
+		delay: 450, duration: 200, property:'zoom', start:0.1 
+	});
+	
+	scrollorama.animate('#cost-zero',{
+	    delay:500, duration:300, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#collaboration',{
+	    delay:700, duration:300, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#libre-bus',{
+	    delay:1000, duration:800, property:'left', start: -900
+	});
+	
+	/*scrollorama.animate('#licenses thead',{
+	    delay:300, duration:300, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#licenses .success',{
+	    delay:300, duration:300, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#licenses .info',{
+	    delay:360, duration:300, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#licenses .warning',{
+	    delay:420, duration:300, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#licenses .error',{
+	    delay:480, duration:300, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#scatter',{
+	    delay:300, duration:100, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#global',{
+	    delay:300, duration:100, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#network',{
+	    delay:300, duration:100, property:'opacity', start: .1
+	});*/
+	
+	scrollorama.animate('#wordle',{ 
+		delay: 550, duration: 400, property:'zoom', start:0.1 
+	});
+	
+	scrollorama.animate('#steps-by',{
+	    delay:300, duration:100, property:'opacity', start: .1
+	});
+	scrollorama.animate('#tweets',{
+	    delay:600, duration:400, property:'opacity', start: .1
+	});
+	
+	
+});
+
 $(function () {
 
 	var data = [
