@@ -5,7 +5,7 @@ title: CC at 10 Years
 
 {%for post in site.posts offset:1 %}
 
-<section>
+<section class="block" id="{{post.id | replace: '/', ''}}">
 
 	{{post.content}}
 
