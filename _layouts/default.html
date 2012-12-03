@@ -13,7 +13,6 @@
         <link href="assets/img/favicon.ico" title="Icon" type="image/x-icon" rel="icon" />
 
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">
         <link rel="stylesheet" href="assets/css/app.css">
         <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -31,10 +30,17 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="container marketing">
+		
+		{%for post in site.posts limit:1 %}
+
+			{{post.content}}
+
+		{% endfor%}
+		
+        <div class="container">
 			
 			<div class="row">
-				<div class="span10 offset1">
+				<div class="span12">
 	 
 					{{ content }}
 					
@@ -51,6 +57,11 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
 		<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script type="text/javascript" src="assets/js/vendor/jquery.flot.js"></script>
+	<script type="text/javascript" src="assets/js/vendor/jquery.flot.resize.js"></script>
+	<script type="text/javascript" src="assets/js/vendor/jquery.flot.pie.js"></script>
+	
+	<script type="text/javascript" src="assets/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
