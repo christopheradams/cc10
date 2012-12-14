@@ -6,28 +6,36 @@ $(document).ready(function() {
 		enablePin: false
     });
 	
-	scrollorama.animate('#halfBillionPlot',{
-	    duration:100, property:'opacity', start: .1
+	scrollorama.animate('#four-hundred-million',{ 
+		delay: -200, duration: 100, property:'zoom', start:0.1 
 	});
 	
-	scrollorama.animate('#halfBillionTable',{
-	    duration:100, property:'opacity', start: .1
-	});
+	//scrollorama.animate('#halfBillionPlot',{
+	//    duration:100, property:'opacity', start: .1
+	//});
+	
+	//scrollorama.animate('#halfBillionTable',{
+	//    duration:100, property:'opacity', start: .1
+	//}); 
 	
 	scrollorama.animate('#open-utopia',{
 	    delay:500, duration:300, property:'opacity', start: .1
 	});
 	
 	scrollorama.animate('#wikipedia',{
-	    delay:800, duration:300, property:'opacity', start: .1
-	});
-	
-	scrollorama.animate('#saylor',{
 	    delay:500, duration:300, property:'opacity', start: .1
 	});
 	
-	scrollorama.animate('#cnx',{
+	scrollorama.animate('#saylor',{
 	    delay:800, duration:300, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#open-learning',{
+	    delay:800, duration:300, property:'opacity', start: .1
+	});
+	
+	scrollorama.animate('#cnx',{
+	    delay:650, duration:300, property:'opacity', start: .1
 	});
 	
 	scrollorama.animate('#plos',{ 
@@ -42,16 +50,24 @@ $(document).ready(function() {
 		delay: 450, duration: 200, property:'zoom', start:0.1 
 	});
 	
-	scrollorama.animate('#cost-zero',{
+	scrollorama.animate('#ccmixter',{ 
+		delay: 600, duration: 300, property:'zoom', start:0.1 
+	});
+	
+	scrollorama.animate('#textbooks',{
 	    delay:500, duration:300, property:'opacity', start: .1
 	});
 	
-	scrollorama.animate('#collaboration',{
+	scrollorama.animate('#cost-zero',{
 	    delay:700, duration:300, property:'opacity', start: .1
 	});
 	
+	scrollorama.animate('#collaboration',{
+	    delay:900, duration:300, property:'opacity', start: .1
+	});
+	
 	scrollorama.animate('#libre-bus',{
-	    delay:1000, duration:800, property:'left', start: -900
+	    delay:1200, duration:800, property:'left', start: -900
 	});
 	
 	/*scrollorama.animate('#licenses thead',{
@@ -87,20 +103,20 @@ $(document).ready(function() {
 	});*/
 	
 	scrollorama.animate('#wordle',{ 
-		delay: 550, duration: 400, property:'zoom', start:0.1 
+		delay: 400, duration: 300, property:'zoom', start:0.1 
 	});
 	
 	scrollorama.animate('#steps-by',{
 	    delay:300, duration:100, property:'opacity', start: .1
 	});
 	scrollorama.animate('#tweets',{
-	    delay:600, duration:400, property:'opacity', start: .1
+	    delay:400, duration:300, property:'opacity', start: .1
 	});
 	
 	
 });
 
-$(function () {
+/*$(function () {
 
 	var data = [
 		{ label: 'Articles',  data: 45472660}, { label: 'Audio',  data: 5324129}, { label: 'Books',  data: 641806}, { label: 'Code',  data: 195275283}, { label: 'Data',  data: 297437}, { label: 'Education',  data: 3106579}, { label: 'Images',  data: 262525847}, { label: 'Media',  data: 9043494}, { label: 'Videos',  data: 6647560} ];
@@ -137,4 +153,4 @@ $(function () {
 		var color = obj.series.color;
 		$('#halfBillionTable tr#' + label).css('background-color', color);
 		$('#halfBillionTable tr#' + label).css('color', 'white');
-	}
+	}*/
