@@ -11,17 +11,13 @@ layout: post
 
 <h3 class="muted">Examples (as of November 2012):</h3>
 
-		<div class="well" id="open-utopia">
-
-			<img class="watermark" src="assets/img/sa.large.png">
+		<div class="well by-sa" id="open-utopia">
 
 		<p class="lead"><strong><a href="http://theopenutopia.org/">Open Utopia</a></strong> <img class="cc-badge" src="assets/img/ccbysa-80x15.png" alt="CC BY SA" /> An open-source, open-access, multi-platform, web-based edition of Thomas More’s 1516 book <em>Utopia</em>. Successfully funded on <a href="http://www.kickstarter.com/projects/1713881779/the-open-utopia-a-new-kind-of-old-book">Kickstarter</a> and based on a free translation from <a href="http://www.gutenberg.org/">Project Gutenberg</a>, anyone anywhere may read and annotate, note reactions, and hold conversations about the content.</p>
 
 		</div>
 
-		<div class="well" id="saylor">
-
-			<img class="watermark" src="assets/img/by.large.png">
+		<div class="well by" id="saylor">
 
 		<p class="lead"><strong><a href="http://www.saylor.org/">Saylor.org</a></strong> <img class="cc-badge" src="assets/img/ccby-80x15.png" alt="CC BY" /> scan open educational resources (OER) repositories to select and remix OER and have created 271 peer reviewed courses. More than <strong>1.1 million visits</strong> to 21 college-level Saylor courses on <a href="http://www.saylor.org/itunesu-coursebuilder-credit-partnerships/">iTunes U</a> generated more than 290,000 subscriptions and 687,000 downloads in 5 months.</p>
 
@@ -31,25 +27,19 @@ layout: post
 	
 	<div class="span6">
 
-		<div class="well" id="wikipedia">
-
-			<img class="watermark" src="assets/img/sa.large.png">
+		<div class="well by-sa" id="wikipedia">
 
 		<p class="lead"><strong><a href="http://www.wikipedia.org/">Wikipedia</a></strong> <img class="cc-badge" src="assets/img/ccbysa-80x15.png" alt="CC BY SA" /> more than <strong>23 million articles</strong> in 285 languages.  It is the 5th most visited website in the world. In September 2012 it counted over <a href="http://reportcard.wmflabs.org/">82,000</a> active editors.</p>
 
 		</div>
 
-		<div class="well" id="cnx">
+		<div class="well by" id="cnx">
 
 		<p class="lead"><strong><a href="http://cnx.org/">Connexions</a></strong> <img class="cc-badge" src="assets/img/ccby-80x15.png" alt="CC BY" /> includes 22,207 open educational resources comprising 21,105 peer reviewed reusable modules within 1,251 collections used by over <strong>2 million people per month</strong>.</p>
 
-			<img class="watermark" src="assets/img/by.large.png">
-
 		</div>
 
-		<div class="well" id="open-learning">
-
-			<img class="watermark" src="assets/img/nc.large.png">
+		<div class="well by-nc" id="open-learning">
 
 		<p class="lead"><strong><a href="http://www.open.edu/openlearn/">Open Learning</a></strong> <img class="cc-badge" src="assets/img/ccbyncsa-80x15.png" alt="CC BY NC SA" /> of the Open University 'open content portfolio' includes 662 free educational courses and has had more than <strong>23 million visits</strong>. Open University materials on iTunes U have recorded more than <strong>56 million downloads</strong>.</p>
 
@@ -80,14 +70,6 @@ layout: post
 	transform: rotate(2deg);
 }
 
-#open-utopia img.watermark  {
-opacity:0.1;
-filter:alpha(opacity=10);
-	position: absolute;
-	top: -40px;
-	left: 40px;
-}
-
 #open-utopia img.cc-badge {
 	-ms-transform:rotate(-2deg);
 	-moz-transform:rotate(-2deg);
@@ -104,14 +86,6 @@ filter:alpha(opacity=10);
 	-webkit-transform:rotate(-2deg);
 	-o-transform:rotate(-2deg);
 	transform: rotate(-2deg);
-}
-
-#wikipedia img.watermark {
-opacity:0.1;
-filter:alpha(opacity=10);
-	position: absolute;
-	top: -40px;
-	left: 30px;
 }
 
 #wikipedia img.cc-badge {
@@ -134,14 +108,6 @@ filter:alpha(opacity=10);
 	transform: rotate(2deg);
 }
 
-#open-learning img.watermark {
-opacity:0.1;
-filter:alpha(opacity=10);
-	position: absolute;
-	top: -40px;
-	left: 40px;
-}
-
 #open-learning img.cc-badge {
 	-ms-transform:rotate(-2deg);
 	-moz-transform:rotate(-2deg);
@@ -159,14 +125,6 @@ filter:alpha(opacity=10);
 	-o-transform:rotate(-1deg);
 	transform: rotate(-1deg);
 } 
-
-#saylor img.watermark {
-opacity:0.1;
-filter:alpha(opacity=10);
-	position: absolute;
-	top: -40px;
-	left: 40px;
-}
 
 #saylor img.cc-badge {
 	-ms-transform:rotate(1deg);
@@ -188,14 +146,6 @@ filter:alpha(opacity=10);
 	transform: rotate(-3deg);
 }
 
-#cnx img.watermark {
-opacity:0.1;
-filter:alpha(opacity=10);
-	position: absolute;
-	top: -50px;
-	left: 30px;
-}
-
 #cnx img.cc-badge {
 	position: relative;
 	overflow: hidden;
@@ -205,5 +155,41 @@ filter:alpha(opacity=10);
 	-o-transform:rotate(3deg);
 	transform: rotate(3deg);
 } 
+
+#underpins .by:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(assets/img/by.large.png) no-repeat center center;
+  opacity: 0.1;
+}
+
+#underpins .by-sa:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(assets/img/sa.large.png) no-repeat center center;
+  opacity: 0.1;
+}
+
+#underpins .by-nc:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(assets/img/nc.large.png) no-repeat center center;
+  opacity: 0.1;
+}
 
 </style>
