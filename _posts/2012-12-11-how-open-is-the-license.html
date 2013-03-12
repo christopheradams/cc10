@@ -6,60 +6,75 @@ layout: post
 <h1>How free is the CC tool you use?</h1>
 <p class="lead">All CC tools are open, and permit degrees of freedom for remixing.</p>
 
-<table class="table table-bordered table-hover" id="licenses">
+<table class="table" id="licenses">
 
 <thead>
 <tr>
 <th>Degree&nbsp;of&nbsp;Freedom</th>
-<th>CC&nbsp;Tool</th>
-<th>Examples&nbsp;of&nbsp;use/th>
+<th style="width:120px">CC&nbsp;Tool</th>
+<th>Examples&nbsp;of&nbsp;use</th>
 </tr>
 </thead>
 
 <tbody>
 
-<tr class="success">
-<td>Public&nbsp;domain</td>
-<td><img src="assets/img/cc0-88x31.png" alt="CC0" /></td>
-<td><a href="http://creativecommons.org/weblog/entry/34017">Europeana Datasets</a></td>
+<tr>
+<td rowspan="7" id="license-alert-level"></td>
+<td><img class="icon" src="assets/img/zero.large.png" alt="CC0" /></td>
+<td><span class="badge badge-success">CC0</span> <a href="http://creativecommons.org/weblog/entry/34017">Europeana Datasets</a></td>
 </tr>
 
-<tr class="info">
-<td>Most Free</td>
-<td><img src="assets/img/ccby-88x31.png" alt="CC BY" /></td>
-<td><a href="http://creativecommons.org/weblog/entry/32335">World Bank Reports</a>, <a href="http://creativecommons.org/weblog/entry/34428">Geoscience Australia</a> satellite images, <a href="http://cc.aljazeera.net/">Al Jazeera videos</a></td>
+<tr>
+<td><img class="icon" src="assets/img/by.large.png" alt="BY" /></td>
+<td><span class="badge badge-success">CC-BY</span> <a href="http://creativecommons.org/weblog/entry/32335">World Bank Reports</a>, <a href="http://creativecommons.org/weblog/entry/34428">Geoscience Australia</a> satellite images, <a href="http://cc.aljazeera.net/">Al Jazeera videos</a></td>
 </tr>
 
-<tr class="info">
-<td></td>
-<td><img src="assets/img/ccbysa-88x31.png" alt="CC BY-SA" /></td>
-<td><a href="http://www.wikipedia.org/">Wikipedia</a>, <a href="http://creativecommons.org/weblog/entry/34769">P2PU</a></td>
+<tr>
+<td><img class="icon" src="assets/img/by.large.png" alt="BY" /><img class="icon" src="assets/img/sa.large.png" alt="SA" /></td>
+<td><span class="badge badge-warning">CC-BY-SA</span> <a href="http://www.wikipedia.org/">Wikipedia</a>, <a href="http://creativecommons.org/weblog/entry/34769">P2PU</a></td>
 </tr>
 
-<tr class="warning">
-<td></td>
-<td><img src="assets/img/ccbync-88x31.png" alt="CC BY-NC" /></td>
-<td><a href="http://glasspockets.org/">Glasspockets</a> website</td>
+<tr>
+<td><img class="icon" src="assets/img/by.large.png" alt="BY" /><img class="icon" src="assets/img/nc.large.png" alt="NC" /></td>
+<td><span class="badge badge-warning">CC-BY-NC</span> <a href="http://glasspockets.org/">Glasspockets</a> website</td>
 </tr>
 
-<tr class="warning">
-<td></td>
-<td><img src="assets/img/ccbynd-88x31.png" alt="CC BY-ND" /></td>
-<td>video <a href="http://vimeo.com/54869666">Video by an Art Agency</a> on Vimeo</td>
+<tr>
+<td><img class="icon" src="assets/img/by.large.png" alt="BY" /><img class="icon" src="assets/img/nd.large.png" alt="ND" /></td>
+<td><span class="badge badge-warning">CC-ND</span> video <a href="http://vimeo.com/54869666">Video by an Art Agency</a> on Vimeo</td>
 </tr>
 
-<tr class="warning">
-<td></td>
-<td><img src="assets/img/ccbyncsa-88x31.png" alt="CC BY-NC-SA" /></td>
-<td><a href="http://creativecommons.org/weblog/entry/13829">Free Music Archive</a>, <a href="http://recordsonribs.com/">RecordsonRibs</a></td>
+<tr>
+<td><img class="icon" src="assets/img/by.large.png" alt="BY" /><img class="icon" src="assets/img/nc.large.png" alt="NC" /><img class="icon" src="assets/img/sa.large.png" alt="SA" /></td>
+<td><span class="badge badge-important">CC BY-NC-SA</span> <a href="http://creativecommons.org/weblog/entry/13829">Free Music Archive</a>, <a href="http://recordsonribs.com/">RecordsonRibs</a></td>
 </tr>
 
-<tr class="warning">
-<td>Least Free</td>
-<td><img src="assets/img/ccbyncnd-88x31.png" alt="CC BY-NC-ND" /></td>
-<td>Portfolio of <a href="http://www.behance.net/lofisolutions">a Graphic Designer</a> on Behance, <a href="http://www.ted.com/talks/larry_lessig_says_the_law_is_strangling_creativity.html">TEDTalks</a>, <a href="http://www.khanacademy.org/">Khan Academy</a></td>
+<tr>
+<td><img class="icon" src="assets/img/by.large.png" alt="BY" /><img class="icon" src="assets/img/nc.large.png" alt="NC" /><img class="icon" src="assets/img/nd.large.png" alt="ND" /></td>
+<td><span class="badge badge-important">CC BY-NC-ND</span> Portfolio of <a href="http://www.behance.net/lofisolutions">a Graphic Designer</a> on Behance, <a href="http://www.ted.com/talks/larry_lessig_says_the_law_is_strangling_creativity.html">TEDTalks</a>, <a href="http://www.khanacademy.org/">Khan Academy</a></td>
 </tr>
 
 </tbody>
 
 </table>
+
+<style>
+
+#licenses img.icon {
+	height: 32px;
+	width: 32px;
+	margin-right: 2px;
+}
+
+#license-alert-level {
+	background: #598d06;
+	background: -moz-linear-gradient(top, #598d06 0%, #9fe137 30%, #ffe536 34%, #d8850f 63%, #f5292a 67%, #500303 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#598d06), color-stop(30%,#9fe137), color-stop(34%,#ffe536), color-stop(63%,#d8850f), color-stop(67%,#f5292a), color-stop(100%,#500303));
+	background: -webkit-linear-gradient(top, #598d06 0%,#9fe137 30%,#ffe536 34%,#d8850f 63%,#f5292a 67%,#500303 100%);
+	background: -o-linear-gradient(top, #598d06 0%,#9fe137 30%,#ffe536 34%,#d8850f 63%,#f5292a 67%,#500303 100%);
+	background: -ms-linear-gradient(top, #598d06 0%,#9fe137 30%,#ffe536 34%,#d8850f 63%,#f5292a 67%,#500303 100%);
+	background: linear-gradient(to bottom, #598d06 0%,#9fe137 30%,#ffe536 34%,#d8850f 63%,#f5292a 67%,#500303 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#598d06', endColorstr='#500303',GradientType=0 );
+}
+
+</style>
