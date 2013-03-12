@@ -3,13 +3,13 @@ title: Collaboration and remixing
 layout: post
 ---
 
-<h1>Creative Commons licenses underpin collaboration and remixing of materials.</h1>
+<h1>Creative Commons licenses help people collaborate, for example:</h1>
 
 <div class="row" style="margin-top: 50px;" id="underpins">
 	
 	<div class="span6">
-
-<h3 class="muted">Examples (as of November 2012):</h3>
+		
+		<h3 class="muted">Examples (as of November 2012):</h3>
 
 		<div class="well by-sa" id="open-utopia">
 
@@ -17,9 +17,9 @@ layout: post
 
 		</div>
 
-		<div class="well by" id="saylor">
+		<div class="well zero" id="thingiverse">
 
-		<p class="lead"><strong><a href="http://www.saylor.org/">Saylor.org</a></strong> <img class="cc-badge" src="assets/img/ccby-80x15.png" alt="CC BY" /> scan open educational resources (OER) repositories to select and remix OER and have created 271 peer reviewed courses. More than <strong>1.1 million visits</strong> to 21 college-level Saylor courses on <a href="http://www.saylor.org/itunesu-coursebuilder-credit-partnerships/">iTunes U</a> generated more than 290,000 subscriptions and 687,000 downloads in 5 months.</p>
+		<p class="lead"><strong><a href="http://www.Thingiverse.com/">Thingiverse</a></strong> <img class="cc-badge" src="assets/img/cc0-80x15.png" alt="CC BY SA" /> holds more than <strong>35,000 3D designs</strong> that have been downloaded nearly 10 million times. Thingiverse dropped their All Rights Reserved option and added the CC0 Public Domain Dedication to the variety of CC legal tools their community uses.  Going forward everything on Thingiverse will be under an open license to enable use and <a href=http://www.thingiverse.com/derivatives>remixing of designs</a>. Want an engagement ring? Why not make one from a <a href=http://www.thingiverse.com/thing:1097>selection</a> of <href=http://www.thingiverse.com/thing:34084>designs</a> on <a href=http://www.thingiverse.com/thing:15720>Thingiverse</a>. 75 other people already have!</p>
 
 		</div>
 
@@ -116,7 +116,7 @@ layout: post
 	transform: rotate(-2deg);
 }
 
-#saylor {
+#thingiverse {
 	position: relative;
 	overflow: hidden;
 	-ms-transform:rotate(-1deg);
@@ -126,7 +126,7 @@ layout: post
 	transform: rotate(-1deg);
 } 
 
-#saylor img.cc-badge {
+#thingiverse img.cc-badge {
 	-ms-transform:rotate(1deg);
 	-moz-transform:rotate(1deg);
 	-webkit-transform:rotate(1deg);
@@ -189,6 +189,18 @@ layout: post
   bottom: 0;
   left: 0;
   background: url(assets/img/nc.large.png) no-repeat center center;
+  opacity: 0.1;
+} 
+
+#underpins .zero:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(assets/img/zero.large.png) no-repeat center center;
   opacity: 0.1;
 }
 
